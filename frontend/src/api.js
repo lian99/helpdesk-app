@@ -4,6 +4,12 @@ const api = axios.create({
   baseURL: 'http://localhost:8000'
 })
 
+import axios from 'axios'
+
+const api = axios.create({
+  baseURL: 'https://helpdesk-backend-ec42.onrender.com'
+})
+
 // Automatically attach token to every request if logged in
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('token')
