@@ -1,6 +1,20 @@
-# Helpdesk Ticketing System
+# 🎫 Helpdesk Ticketing System
 
 A full-stack IT support ticket management system built with FastAPI and React.
+
+## Screenshots
+
+### Login
+![Login](screenshots/login.png)
+
+### User Dashboard
+![User Dashboard](screenshots/user.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin.png)
+
+### Ticket Updated
+![Updated Ticket](screenshots/updated.png)
 
 ## Features
 
@@ -26,7 +40,7 @@ helpdesk/
 │   ├── database.py      # Database models
 │   ├── auth.py          # Authentication routes
 │   ├── tickets.py       # Ticket routes
-│   └── test_app.py      # pytest test suite
+│   └── test_app.py      # pytest test suite (10 tests)
 └── frontend/
     └── src/
         ├── App.jsx
@@ -69,3 +83,19 @@ pytest test_app.py -v
 | GET | /tickets/my | User | Get my tickets |
 | GET | /tickets/all | Admin | Get all tickets |
 | PATCH | /tickets/{id} | Admin | Update priority/status |
+
+## Test Results
+```
+test_register_success          PASSED
+test_register_duplicate_email  PASSED
+test_login_success             PASSED
+test_login_wrong_password      PASSED
+test_submit_ticket             PASSED
+test_user_sees_only_own_tickets PASSED
+test_admin_sees_all_tickets    PASSED
+test_regular_user_cannot_see_all_tickets PASSED
+test_admin_can_update_ticket   PASSED
+test_user_cannot_update_ticket PASSED
+
+10 passed in 12.84s
+```
