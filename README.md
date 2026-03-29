@@ -1,15 +1,6 @@
 # 🎫 Helpdesk Ticketing System
 
 A full-stack IT support ticket management system built with FastAPI and React.
-## 🌐 Live Demo
-
-**[Open the app](https://helpdesk-frontend-iqkc.onrender.com)**
-
-> Note: First load may take 30 seconds as the free server wakes up.
-
-**Test credentials:**
-- Admin: `admin@test.com` / `123456`
-- User: `user@test.com` / `123456`
 
 ## Screenshots
 
